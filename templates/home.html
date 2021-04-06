@@ -1,0 +1,50 @@
+<html>
+<body bgcolor="red">
+<center>
+    <title>Predict Blood Donation</title>
+
+    <style>
+        p {
+           color: #FFFFFF;
+           text-align: center;
+           }
+
+        form {
+            margin: 15px;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #24a0ed;
+            border: none;
+            color: white;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition-duration: 0.4s;
+            font-size: 16px;
+          }
+    
+          .button:hover {
+             background-color: #478559;	
+             color: white;
+          }
+    </style>
+          
+
+    <h1>Lending Club Loan Prediction</h1>
+
+    <form action="/predict" method="POST">
+        <p>Requested Amount: <input type="number" name="Amount_Requested" placeholder="Amount_Requested" required="required"></p>
+        <p>Risk Score: <input type="number" name="Risk_Score" placeholder="Risk_Score" required="required"></p>
+        <p>DTI Ratio: <input type="number" name="DTI_Ratio" placeholder="DTI_Ratio" required="required"></p>
+        <p>Employment Length: <input type="number" name="Employment_Ratio" placeholder="Employment_Ratio" required="required"></p>
+
+        <button class="button" type="submit" value="predict">Predict</button>
+    </form>
+
+</center>
+</body>
+</html>
