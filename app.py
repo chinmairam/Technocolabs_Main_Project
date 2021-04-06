@@ -18,7 +18,7 @@ def predict():
     final = [np.array(int_features)]
     predictions = model1.predict(final)
     output = predictions[0]
-    return render_template('predict.html', prediction_text="Prediction is {}".format(output))
+    #return render_template('predict.html', prediction_text="Prediction is {}".format(output))
 
     if output == 0:
         return render_template('predict.html', prediction_text=f'Sorry,Your loan was not approved')
