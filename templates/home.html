@@ -1,7 +1,7 @@
 <html>
-<body bgcolor="red">
+<body bgcolor="">
 <center>
-    <title>Predict Blood Donation</title>
+    <title>Lending Club Loan Prediction</title>
 
     <style>
         p {
@@ -34,17 +34,18 @@
     </style>
           
 
-    <h1>Lending Club Loan Prediction</h1>
+    <h1 color="green">Lending Club Loan Prediction</h1>
 
     <form action="/predict" method="POST">
-        <p>Requested Amount: <input type="number" name="Amount_Requested" placeholder="Amount_Requested" required="required"></p>
+        <p>Requested Amount: <input type="number" name="Amount Requested" placeholder="Amount Requested" required="required"></p>
         <p>Risk Score: <input type="number" name="Risk_Score" placeholder="Risk_Score" required="required"></p>
-        <p>DTI Ratio: <input type="number" name="DTI_Ratio" placeholder="DTI_Ratio" required="required"></p>
-        <p>Employment Length: <input type="number" name="Employment_Ratio" placeholder="Employment_Ratio" required="required"></p>
+        <p>DTI Ratio: <input type="number" name="Debt-To-Income Ratio" placeholder="Debt-To-Income Ratio" required="required"></p>
+        <p>Employment Length: <input type="number" name="Employment Length" placeholder="Employment Length" required="required"></p>
 
         <button class="button" type="submit" value="predict">Predict</button>
     </form>
 
+    <img src="https://static.seekingalpha.com/uploads/2018/7/24/611070-15324425486052382_origin.jpg" alt="Lending-Club">
 </center>
 </body>
 </html>
