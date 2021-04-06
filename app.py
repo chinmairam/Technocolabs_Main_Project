@@ -21,9 +21,9 @@ def predict():
     #return render_template('predict.html', prediction_text="Prediction is {}".format(output))
 
     if int(output) == 0:
-        return render_template('predict.html', prediction_text=f'Sorry,Your loan was not approved')
+        return render_template('predict.html', picture="https://image.shutterstock.com/image-vector/loan-approved-stamp-260nw-425124292.jpg", prediction_text=f'Sorry,Your loan was not approved')
     else:
-        return render_template('predict.html', prediction_text=f'Your loan was approved')
+        return render_template('predict.html', picture="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRisxDm4brzjTGjDI6w0OlpwdoACEqcdfuOVg&usqp=CAU", prediction_text=f'Your loan was approved')
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -11,13 +11,9 @@
     <h1>PREDICTION : </h1>
 
     <br><br>
-    <h3 style="color:blue;">{{ prediction_text }}<h3>
+    <h2 style="color:blue;">{{ prediction_text }}<h2>
     
-    {% if predictions[0] == 1 %}
-        <img src="https://image.shutterstock.com/image-vector/loan-approved-stamp-260nw-425124292.jpg" alt="approved">
-    {% else %}
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRisxDm4brzjTGjDI6w0OlpwdoACEqcdfuOVg&usqp=CAU" alt="loan rejected">
-    {% endif %}
+    {{ picture }}
 
     <br><br>
     <a href="/">Go back to home page</a>
