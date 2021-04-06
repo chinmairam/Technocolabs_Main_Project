@@ -14,13 +14,13 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    int_features = [int(x) for x in request.form.values()]
+    int_features = [float(x) for x in request.form.values()]
     final = [np.array(int_features)]
     predictions = model1.predict(final)
     output = predictions[0]
     #return render_template('predict.html', prediction_text="Prediction is {}".format(output))
 
-    if output == 0:
+    if int(output) == 0:
         return render_template('predict.html', prediction_text=f'Sorry,Your loan was not approved')
     else:
         return render_template('predict.html', prediction_text=f'Your loan was approved')
