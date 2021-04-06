@@ -20,7 +20,7 @@ def predict():
     output = predictions[0]
     return render_template('predict.html', prediction_text="Prediction is {}".format(output))
 
-    if predictions == 0:
+    if output == 0:
         return render_template('predict.html', prediction_text=f'Sorry,Your loan was not approved')
     else:
         return render_template('predict.html', prediction_text=f'Your loan was approved')
